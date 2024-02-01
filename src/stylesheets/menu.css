@@ -1,0 +1,28 @@
+#menu {
+    padding: 10px;
+    background-color: rgb(40, 40, 40);
+    margin: 0px;
+    display: block;
+    overflow: hidden;
+}
+
+#menu a {
+    color: white;
+    font-size: large;
+    margin: 5px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#menu a:hover {
+    text-decoration: underline;
+}
+
+#menu a[data-pos='left'] {
+    float: left;
+}
+
+#menu a[data-pos='right'] {
+    float: right;
+}
