@@ -4,7 +4,7 @@
     margin: 0px;
     display: block;
     overflow: hidden;
-    height: 30px;
+    height: 35px;
 }
 
 #menu a {
@@ -14,24 +14,44 @@
     display: inline-block;
     text-decoration: none;
     font-weight: bold;
-    padding-bottom: 7px;
+    padding-bottom: 8px;
     transition-property: border, color;
     transition-duration: .5s;
 }
 
 #menu a:hover {
-    color: rgb(255, 94, 94);
-    border-bottom-color: rgb(255, 94, 94);
     border-bottom-width: 5px;
     border-bottom-style: solid;
+    transition-property: border, color;
+    transition-duration: .5s;
+}
+
+#menu a[data-color="red"]:hover {
+    color: rgb(255, 94, 94);
+    border-bottom-color: rgb(255, 94, 94);
+}
+
+#menu a[data-color="green"]:hover {
+    color: rgb(118, 255, 94);
+    border-bottom-color: rgb(118, 255, 94);
+}
+
+#menu a[data-color="yellow"]:hover {
+    color: rgb(255, 255, 94);
+    border-bottom-color: rgb(255, 255, 94);
+}
+
+#menu a[data-color="blue"]:hover {
+    color: rgb(94, 105, 255);
+    border-bottom-color: rgb(94, 105, 255);
 }
 
 #menu a[data-pos='left'] {
     float: left;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 #menu a[data-pos='right'] {
     float: right;
-    margin-right: 1;
+    margin-right: 15px;
 }
