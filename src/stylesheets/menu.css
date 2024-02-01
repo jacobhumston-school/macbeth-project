@@ -4,25 +4,34 @@
     margin: 0px;
     display: block;
     overflow: hidden;
+    height: 30px;
 }
 
 #menu a {
     color: white;
-    font-size: large;
+    font-size: larger;
     margin: 5px;
     display: inline-block;
     text-decoration: none;
     font-weight: bold;
+    padding-bottom: 7px;
+    transition-property: border, color;
+    transition-duration: .5s;
 }
 
 #menu a:hover {
-    text-decoration: underline;
+    color: rgb(255, 94, 94);
+    border-bottom-color: rgb(255, 94, 94);
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
 }
 
 #menu a[data-pos='left'] {
     float: left;
+    margin-left: 10px;
 }
 
 #menu a[data-pos='right'] {
     float: right;
+    margin-right: 1;
 }
