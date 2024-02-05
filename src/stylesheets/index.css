@@ -1,5 +1,5 @@
 #content {
-    max-width: 85%;
+    max-width: 60%;
     margin-left: auto;
     margin-right: auto;
     font-size: large;
@@ -8,7 +8,26 @@
     padding: 25px;
     margin-top: 25px;
     text-align: left;
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(220, 220, 220);
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+}
+
+#content h1,
+#content h2 {
+    margin: 0px;
+}
+
+#content h2 {
+    color: rgb(25, 25, 25);
+}
+
+#content a {
+    color: rgb(27, 100, 173);
+    text-decoration: none;
+}
+
+#content a:hover {
+    color: rgb(22, 63, 104);
+    text-decoration: underline;
 }
