@@ -1,0 +1,8 @@
+.quotation {
+    font-style: italic;
+}
+
+.quotation:hover {
+    cursor: pointer;
+    border-bottom: dashed 2px rgb(0, 0, 0);
+}
