@@ -6,3 +6,33 @@
     cursor: pointer;
     border-bottom: dashed 2px rgb(0, 0, 0);
 }
+
+#content {
+    display: flex;
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-flow: row nowrap;
+    overflow-x: auto;
+    margin-top: 25px;
+}
+
+#content .scene {
+    padding: 15px;
+    background-color: rgb(220, 220, 220);
+    border-left-color: rgb(40, 40, 40);
+    border-left-style: solid;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    max-width: 300px;
+}
+
+#content .scene h1 {
+    font-size: larger;
+    margin: 0px;
+}
+
+#content .scene p {
+    margin: 0px;
+    margin-top: 5px;
+}
