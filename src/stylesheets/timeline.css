@@ -1,10 +1,11 @@
 .quotation {
     font-style: italic;
+    color: rgb(90, 90, 90);
 }
 
 .quotation:hover {
     cursor: pointer;
-    border-bottom: dashed 2px rgb(0, 0, 0);
+    border-bottom: dashed 2px rgb(90, 90, 90);
 }
 
 #content {
@@ -13,8 +14,11 @@
     margin-left: auto;
     margin-right: auto;
     flex-flow: row nowrap;
-    overflow-x: auto;
+    flex-direction: row;
+    overflow-x: scroll;
     margin-top: 25px;
+    column-gap: 10px;
+    padding-bottom: 15px;
 }
 
 #content .scene {
@@ -24,7 +28,8 @@
     border-left-style: solid;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    max-width: 300px;
+    width: 350px;
+    min-width: 350px;
 }
 
 #content .scene h1 {
@@ -35,4 +40,5 @@
 #content .scene p {
     margin: 0px;
     margin-top: 5px;
+    font-size: large;
 }
