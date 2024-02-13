@@ -26,12 +26,15 @@ function hookQuotes() {
             element.dataset.original = element.innerHTML;
             element.innerHTML = fixQuoteString(element.dataset.original);
             element.addEventListener('click', function () {
-                if (element.innerHTML !== fixQuoteString(element.dataset.original)) {
-                    element.innerHTML = element.dataset.original;
-                } else {
-                    element.innerHTML = element.dataset.translated;
-                }
-                element.innerHTML = fixQuoteString(element.innerHTML);
+                window.open(`./documents/script.pdf?search=${element.dataset.original.replace("'", "")}`)
+                /**
+                 * if (element.innerHTML !== fixQuoteString(element.dataset.original)) {
+                 *    element.innerHTML = element.dataset.original;
+                 * } else {
+                 *    element.innerHTML = element.dataset.translated;
+                 * }
+                 * element.innerHTML = fixQuoteString(element.innerHTML);
+                 */
             });
         }
     }
